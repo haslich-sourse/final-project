@@ -54,7 +54,7 @@
     <div class="container">
         <h1>Спасибо за ваше сообщение!</h1>
         <p>Мы свяжемся с вами в ближайшее время.</p>
-        <button class="button" onclick="window.location.href='index.php'">Вернуться на главную</button>
+        <button class="button" onclick="window.location.href='.'">Вернуться на главную</button>
     </div>
 </body>
 </html>
