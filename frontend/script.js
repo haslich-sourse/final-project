@@ -164,3 +164,17 @@ function createSquare() {
     // Добавим движение к квадрату
     const moveX = Math.random() > 0.5 ? 1 : -1;
     const moveY = Math.random() > 0.5 ? 1 : -1;
+    function moveSquare() {
+        if (!gameInProgress) return;
+
+        const currentTop = parseFloat(square.style.top);
+        const currentLeft = parseFloat(square.style.left);
+
+        // Обновляем позицию
+        square.style.top = `${currentTop + moveY * 2}px`;
+        square.style.left = `${currentLeft + moveX * 2}px`;
+
+        requestAnimationFrame(moveSquare);
+    }
+
+    moveSquare();
