@@ -68,3 +68,16 @@ window.addEventListener('resize', () => {
 resizeCanvas();
 createStars();
 drawStars();
+
+const shapes = document.querySelectorAll('.circle, .triangle, .square');
+
+shapes.forEach(shape => {
+    shape.addEventListener('mouseenter', () => {
+        shape.style.transform = 'scale(1.1)';
+        shape.style.transition = 'transform 0.3s ease';
+    });
+
+    shape.addEventListener('mouseleave', () => {
+        shape.style.transform = 'scale(1)';
+    });
+});
