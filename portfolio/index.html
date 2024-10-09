@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="burger-menu">
+        <div class="burger-icon" id="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Обо мне</a></li>
+            <li><a href="#">Опыт работы</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="frontend/index.html">На что способен фронтенд</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- О себе -->
+    <section id="about">
+      <h2>Обо мне</h2>
+      <p>
+        Меня зовут Игорь, я веб-разработчик с опытом работы в различных
+        технологиях, таких как HTML, CSS, JS, и PHP. Кроме того, я преподаю
+        программирование и увлекаюсь дизайном и музыкой.
+      </p>
+    </section>
+    <!-- Проекты -->
+    <section id="projects">
+      <h2>Проекты</h2>
+      <div class="project">
+        <h3>Проект 1: Сайт для ООО "Основание"</h3>
+        <p>
+          Задача: Разработка корпоративного сайта с каталогом продукции и
+          функцией заказа.
+        </p>
+        <p>Технологии: HTML, CSS, PHP, JavaScript</p>
+        <p>
+          Вклад: Разработал фронтенд и бэкенд, интегрировал систему платежей.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Проект 2: Платформа для онлайн-курсов</h3>
+        <p>
+          Задача: Создание интерактивной платформы для студентов с системой
+          тестирования и отслеживания прогресса.
+        </p>
+        <p>Технологии: HTML, CSS, Python, JavaScript</p>
+        <p>Вклад: Полная разработка платформы.</p>
+      </div>
+    </section>
+    <!-- Навыки -->
+    <section id="skills">
+      <h2>Навыки</h2>
+      <ul>
+        <li>HTML — эксперт</li>
+        <li>CSS — продвинутый</li>
+        <li>JavaScript — средний</li>
+        <li>PHP — средний</li>
+        <li>Python — базовый</li>
+      </ul>
+    </section>
+    <!-- Отзывы -->
+    <section id="reviews">
+      <h2>Отзывы</h2>
+      <p>
+        Отличный преподаватель и разработчик! Работали вместе на проекте для
+        учебной платформы, результат превзошел все ожидания.
+      </p>
+      <p>– ООО "Основание"</p>
+    </section>
+    <!-- Контакты -->
+    <section id="contacts">
+        <h2>Контакты</h2>
+        <form action="submit.php" method="POST">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Отправить</button>
+        </form>
+        <p>Email: ig.mizyovvv@gmail.com</p>
+        <p>Вконтакте: <a href="https://vk.com/ig_mizyovv">vk.com/ig_mizyovv</a></p>
+        <p>Telegram: <a href="https://t.me/ig_mizyovv">@ig_mizyovv</a></p>
+    </section>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
