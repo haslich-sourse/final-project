@@ -81,3 +81,17 @@ shapes.forEach(shape => {
         shape.style.transform = 'scale(1)';
     });
 });
+
+
+const texts = document.querySelectorAll('.geometric-layout p');
+
+texts.forEach((text, index) => {
+    const words = text.innerHTML.split(' ');
+    text.innerHTML = ''; // Очищаем текст
+
+    words.forEach((word, i) => {
+        setTimeout(() => {
+            text.innerHTML += word + ' ';
+        }, i * 30); // Появление каждого слова с задержкой
+    });
+});
