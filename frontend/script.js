@@ -178,3 +178,17 @@ function createSquare() {
     }
 
     moveSquare();
+
+    square.addEventListener('click', () => {
+        score++;
+        scoreDisplay.textContent = score;
+        square.remove();
+    });
+
+    setTimeout(() => {
+        square.remove();
+    }, 1500);
+}
+
+// Запуск игры при нажатии на кнопку
+startBtn.addEventListener('click', startGame);
