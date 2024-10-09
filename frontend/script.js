@@ -57,3 +57,14 @@ function drawStars() {
 
     requestAnimationFrame(drawStars);
 }
+
+// Слушаем событие изменения размера окна и обновляем canvas и звезды
+window.addEventListener('resize', () => {
+    resizeCanvas();
+    createStars();
+});
+
+// Инициализация размеров и звезд
+resizeCanvas();
+createStars();
+drawStars();
