@@ -121,3 +121,29 @@ document.querySelector('.triangle').addEventListener('click', function () {
         this.style.borderRadius = '50%'; // Квадрат превращается в круг
     }
 });
+
+
+const gameArea = document.getElementById('game-area');
+const scoreDisplay = document.getElementById('score');
+const startBtn = document.getElementById('start-btn');
+
+let score = 0;
+let gameInProgress = false;
+
+function startGame() {
+    score = 0;
+    scoreDisplay.textContent = score;
+    gameInProgress = true;
+    startBtn.disabled = true;
+
+    let gameDuration = 10000; // Игра длится 10 секунд
+    let squareInterval = setInterval(createSquare, 800); // Создавать новый квадрат каждые 0.8 секунд
+
+    // Закончить игру через 10 секунд
+    setTimeout(() => {
+        clearInterval(squareInterval);
+        gameInProgress = false;
+        startBtn.disabled = false;
+        alert(`Игра окончена! Ваш результат: ${score} очков.`);
+    }, gameDuration);
+}
