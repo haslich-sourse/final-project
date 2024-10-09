@@ -95,3 +95,29 @@ texts.forEach((text, index) => {
         }, i * 30); // Появление каждого слова с задержкой
     });
 });
+
+
+document.querySelector('.circle').addEventListener('click', function () {
+    if (this.style.borderRadius === '50%') {
+        this.style.borderRadius = '0'; // Круг превращается в квадрат
+    } else {
+        this.style.borderRadius = '50%'; // Квадрат превращается в круг
+    }
+});
+
+
+document.querySelector('.square').addEventListener('click', function () {
+    if (this.style.borderRadius === '50%') {
+        this.style.borderRadius = '0'; // Круг превращается в квадрат
+    } else {
+        this.style.borderRadius = '50%'; // Квадрат превращается в круг
+    }
+});
+
+document.querySelector('.triangle').addEventListener('click', function () {
+    if (this.style.borderRadius === '50%') {
+        this.style.borderRadius = '0'; // Круг превращается в квадрат
+    } else {
+        this.style.borderRadius = '50%'; // Квадрат превращается в круг
+    }
+});
