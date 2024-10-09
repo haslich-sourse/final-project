@@ -147,3 +147,20 @@ function startGame() {
         alert(`Игра окончена! Ваш результат: ${score} очков.`);
     }, gameDuration);
 }
+
+function createSquare() {
+    if (!gameInProgress) return;
+
+    const square = document.createElement('div');
+    square.classList.add('square');
+
+    square.style.top = `${Math.random() * (gameArea.clientHeight - 50)}px`;
+    square.style.left = `${Math.random() * (gameArea.clientWidth - 50)}px`;
+
+    square.style.backgroundColor = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
+
+    gameArea.appendChild(square);
+
+    // Добавим движение к квадрату
+    const moveX = Math.random() > 0.5 ? 1 : -1;
+    const moveY = Math.random() > 0.5 ? 1 : -1;
