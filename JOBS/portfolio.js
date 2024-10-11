@@ -1,5 +1,8 @@
-// Функция для переключения бургер-меню
-function toggleMenu() {
-    const menu = document.querySelector('.menu');
-    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-}
+
+console.log('Скрипт загружен');
+
+const burgerMenu = document.querySelector('.burger-menu');
+const menu = document.querySelector('.menu');
+burgerMenu.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});

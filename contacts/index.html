@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="burger-menu">
+      <div class="burger-icon" id="burger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Обо мне</a></li>
+          <li><a href="portfolio/index.html">Портфолио</a></li>
+          <li><a href="JOBS/portfolio.html">Опыт работы</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="frontend/index.html">На что способен фронтенд</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <section class="contact-header">
+        <h1>Свяжитесь со мной</h1>
+        <p>
+          Я всегда готов к новым проектам и сотрудничеству! Вы можете оставить
+          заявку или связаться напрямую по контактам ниже.
+        </p>
+      </section>
+
+      <section class="contact-info">
+        <div class="contact-item">
+          <h2>Почта</h2>
+          <p>
+            <a href="mailto:ig.mizyovvv@gmail.com">ig.mizyovvv@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="contact-item">
+          <h2>ВКонтакте</h2>
+          <p>
+            <a href="https://vk.com/ig_mizyovv" target="_blank"
+              >vk.com/ig_mizyovv</a
+            >
+          </p>
+        </div>
+
+        <div class="contact-item">
+          <h2>Telegram</h2>
+          <p>
+            <a href="https://t.me/ig_mizyovv" target="_blank">@ig_mizyovv</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-form">
+        <h2>Оставить заявку на сотрудничество</h2>
+        <form action="send_message.php" method="POST" id="contactForm">
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Сообщение:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 Моё Портфолио. Все права защищены.</p>
+    </footer>
+  </body>
+</html>

@@ -7,50 +7,63 @@ body {
     color: #333;
 }
 
-/* Бургер-меню */
-.burger-menu {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-}
-
-.burger {
+.menu.active {
+    display: block;
+  }
+  
+  
+  .burger-menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+  }
+  
+  .burger-icon {
     cursor: pointer;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 4px;
-    transition: 0.3s;
-}
-
-.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .burger-icon span {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    transition: all 0.3s ease;
+  }
+  
+  
+  /* Скрываем меню по умолчанию */
+  .menu {
     display: none;
-    position: fixed;
-    top: 60px;
-    left: 20px;
-    background-color: white;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.menu ul {
-    list-style-type: none;
+    border-radius: 10px;
+  }
+  
+  .menu ul {
+    list-style: none;
     padding: 0;
-}
-
-.menu ul li {
-    margin-bottom: 10px;
-}
-
-.menu ul li a {
+  }
+  
+  .menu ul li {
+    margin: 10px 0;
+  }
+  
+  .menu ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #333;
     font-size: 18px;
-}
+  }
+  
+  /* Анимация для открытия меню */
+  .menu.open {
+    display: block;
+  }
 
 /* Заголовки и блоки */
 .intro {
